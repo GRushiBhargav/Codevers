@@ -32,11 +32,11 @@ const ProblemsTable:React.FC<ProblemsTableProps> = () => {
         <tbody className='text-white'>
             {problems.map((doc,idx)=>{
                 const difficulyColor =
-                doc.difficulty === "Easy"
-                    ? "text-dark-green-s"
-                    : doc.difficulty === "Medium"
-                    ? "text-dark-yellow"
-                    : "text-dark-pink";
+                doc.difficulty === "Basic"
+                    ? "text-yellow-400"
+                    : doc.difficulty === "Intermediate"
+                    ? "text-blue-400"
+                    : "text-red-600";
 
                 return(
                     <tr className={`${idx % 2 == 1 ? "bg-dark-layer-1" : ""}`} key={doc.id}>
@@ -80,6 +80,11 @@ const ProblemsTable:React.FC<ProblemsTableProps> = () => {
 									videoId={youtubePlayer.videoId}
 									loading='lazy'
 									iframeClassName='w-full min-h-[500px]'
+                                    opts={{
+                                        playerVars: {
+                                            autoplay: 1, // Autoplay the video
+                                        },
+                                    }}
 								/>
 							</div>
 						</div>

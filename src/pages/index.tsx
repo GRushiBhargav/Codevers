@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import TopBar from '@/components/TopBar/TopBar'
 import ProblemsTable from '@/ProblemsTable/ProblemsTable'
+import { FaList } from "react-icons/fa6";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
 					className='text-2xl text-center text-gray-400 dark:text-gray-400 font-medium
 					uppercase mt-10 mb-5'
 				>
-					&ldquo; QUALITY OVER QUANTITY &rdquo; 👇
+					&ldquo; Challenge Inventory &rdquo;
 				</h1>
 				<div className='relative overflow-x-auto mx-auto px-6 pb-10'>
 					<table className='text-sm text-left text-gray-50 dark:text-gray-50 sm:w-7/12 w-full max-w-[1200px] mx-auto'>
