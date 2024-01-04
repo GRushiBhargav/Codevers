@@ -7,6 +7,6 @@ type ProblemPageProps = {
 
 const ProblemPage:React.FC<ProblemPageProps> = () => {
     
-    return <TopBar />
+    return <TopBar problemPage={true} />
 }
 export default ProblemPage;
