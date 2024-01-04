@@ -9,10 +9,10 @@ import Logout from '../Buttons/Logout';
 import Image from 'next/image';
 
 type TopBarProps = {
-    
+    problemPage? : boolean;
 };
 
-const TopBar:React.FC<TopBarProps> = () => {
+const TopBar:React.FC<TopBarProps> = ({problemPage}) => {
     const [user] = useAuthState(auth);
 	const setAuthModalState = useSetRecoilState(authModalState);
 	const router = useRouter();
