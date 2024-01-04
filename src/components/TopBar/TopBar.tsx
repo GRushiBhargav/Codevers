@@ -21,8 +21,12 @@ const TopBar:React.FC<TopBarProps> = ({problemPage}) => {
         <nav className='relative flex h-[60px] w-full shrink-0 items-center px-5 bg-dark-layer-1 text-dark-gray-7'>
         <div className={`flex w-full items-center justify-between max-w-[1200px] mx-auto`}>
         <Link href='/' className='h-[55px] flex-1'>
+
             <Image src="/logo2.png" alt="Logo" className='h-full'height={125} width={200} />
             </Link>
+            {problemPage && (
+                <div className='flex- items-center gap-4 flex-1 justify-center'></div>
+            )}
             <div className='flex items-center gap-10 flex-1 justify-end'>
                 {!user && (
                 <Link href='/auth'onClick={() => setAuthModalState((prev) => ({ ...prev, isOpen: true, type: "login" }))}>
