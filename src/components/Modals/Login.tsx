@@ -28,18 +28,18 @@ const Login:React.FC<LoginProps> = () => {
       }
       const handleLogin = async (e:React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault()
-        if (!inputs.email || !inputs.password) return alert("Please fill all fields");
+        if (!inputs.email || !inputs.password) return toast.warn("Please Fill All Fields", { position: "top-left", autoClose: 3000, theme: "colored" });
 		try {
 			const newUser = await signInWithEmailAndPassword(inputs.email, inputs.password);
 			if (!newUser) return;
 			router.push("/");
 		} catch (error: any) {
-			toast.error(error.message, { position: "top-center", autoClose: 3000, theme: "colored" });
+			toast.error("Invalid Credentials", { position: "top-left", autoClose: 3000, theme: "colored" });
 		}
 	};
     console.log(user,"user")
 	useEffect(() => {
-		if (error) toast.error(error.message, { position: "top-center", autoClose: 3000, theme: "colored" });
+		if (error) toast.error("Invalid Credentials", { position: "top-left", autoClose: 3000, theme: "colored" });
 	}, [error]);
       
     return (
