@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import CircleSkeleton from "@/components/Skeletons/CircleSkeleton";
 import RectangleSkeleton from "@/components/Skeletons/RectangleSkeleton";
 import { auth, firestore } from "@/firebase/firebase";
