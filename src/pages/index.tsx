@@ -5,10 +5,36 @@ import ProblemsTable from '@/ProblemsTable/ProblemsTable'
 import { FaList } from "react-icons/fa6";
 import { useState } from 'react';
 import useHasMounted from '@/hooks/useHasMounted';
+import { doc, setDoc } from 'firebase/firestore';
+import { firestore } from '@/firebase/firebase';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+	const [inputs,setInputs] = useState({
+		id:'',
+		title:'',
+		difficulty:'',
+		category:'',
+		videoId:'',
+		link:'',
+		order:0,
+		likes:0,
+		dislikes:0
+	})
+
+  const handleInputChange = (e:React.ChangeEvent<HTMLInputElement>)=>{
+	setInputs({...inputs,[e.target.name]: e.target.value});
+	};
+  const handleSubmit = 	 async(e: React.FormEvent<HTMLFormElement>) =>{
+	e.preventDefault();
+	const newProblem = {
+		...inputs,
+		order : Number(inputs.order)
+	}
+	await setDoc(doc(firestore,"problems",inputs.id),newProblem)
+	alert("Saved to db")
+  }
   const [loadingProblems,setLoadingProblems] = useState(true)
   const hasMounted = useHasMounted();
   
@@ -58,7 +84,8 @@ export default function Home() {
               <ProblemsTable setLoadingProblems={setLoadingProblems} />
 						</table>
 				</div>
-				{/*//adding problems to database using form
+				{/*adding problems to database using form*/}
+				
 				 <form className='p-6 flex flex-col max-w-sm gap-3' onSubmit={handleSubmit}>
 					<input onChange={handleInputChange} type="text" placeholder='problem id' name='id' />
 					<input onChange={handleInputChange}type="text" placeholder='title' name='title' />
@@ -69,7 +96,7 @@ export default function Home() {
 					<input onChange={handleInputChange}type="text" placeholder='link?' name='link' />
 					
 					<button className='bg-white'>Save to db</button>
-				</form> */}
+				</form>
 
 
       </main>

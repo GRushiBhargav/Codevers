@@ -1,4 +1,6 @@
 import { Problem } from "../types/problem";
+import { containerWithMostWater } from "./container-with-most-water";
+import { countGoodTriplets } from "./count-good-triplets";
 import { jumpGame } from "./jump-game";
 import { reverseLinkedList } from "./reverse-linked-list";
 import { search2DMatrix } from "./search-a-2d-matrix";
@@ -15,4 +17,7 @@ export const problems: ProblemMap = {
 	"jump-game": jumpGame,
 	"search-a-2d-matrix": search2DMatrix,
 	"valid-parentheses": validParentheses,
+	"count-good-triplets":countGoodTriplets,
+	"container-with-most-water":containerWithMostWater
+
 };
