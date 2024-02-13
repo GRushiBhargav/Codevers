@@ -27,7 +27,7 @@ function maxArea(height){
 
 export const containerWithMostWater: Problem = {
 	id: "container-with-most-water",
-	title: "Container With Most Water",
+	title: "6. Container With Most Water",
 	problemStatement: `
     <p class="mt-3">You are given an integer array<code>n</code> non-negative integers <code>height</code> where each represents the height of a vertical line of width <code>1</code>, find two lines which, together with the x-axis forms a container, such that the container contains the most water.</p>
     <p class="mt-3">You may not slant the container.</p>
@@ -65,5 +65,5 @@ export const containerWithMostWater: Problem = {
 	starterCode: starterCodeContainerWithMostWater,
 	handlerFunction: containerWithMostWaterHandler,
 	starterFunctionName: "function maxArea",
-	order: 0,
+	order: 6,
 };

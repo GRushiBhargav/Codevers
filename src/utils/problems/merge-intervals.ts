@@ -45,7 +45,7 @@ function merge(intervals) {
 
 export const mergeIntervals: Problem = {
 	id: "merge-intervals",
-	title: "Merge Intervals",
+	title: "7. Merge Intervals",
 	problemStatement: `
     <p class="mt-3">Given an array of <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.</p>
     `,
@@ -69,5 +69,5 @@ export const mergeIntervals: Problem = {
 	starterCode: starterCodeMergeIntervals,
 	handlerFunction: mergeIntervalsHandler,
 	starterFunctionName: "function merge",
-	order: 0,
+	order: 7,
 };

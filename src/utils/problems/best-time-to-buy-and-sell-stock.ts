@@ -27,7 +27,7 @@ function maxProfit(prices) {
 
 export const maxProfit: Problem = {
 	id: "best-time-to-buy-and-sell-stock",
-	title: "Best Time to Buy and Sell Stock",
+	title: "9. Best Time to Buy and Sell Stock",
 	problemStatement: `
     <p class="mt-3">You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>
     <p class="mt-3">You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.</p>
@@ -46,5 +46,5 @@ export const maxProfit: Problem = {
 	starterCode: starterCodeMaxProfit,
 	handlerFunction: maxProfitHandler,
 	starterFunctionName: "function maxProfit",
-	order: 0,
+	order: 9,
 };

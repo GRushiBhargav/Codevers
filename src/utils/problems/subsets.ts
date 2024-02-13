@@ -26,7 +26,7 @@ function subsets(nums) {
 
 export const subsets: Problem = {
 	id: "subsets",
-	title: "Subsets",
+	title: "10. Subsets",
 	problemStatement: `
     <p class="mt-3">Given an integer array <code>nums</code>, return <strong>all possible subsets (the power set)</strong>.</p>
     <p class="mt-3">The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>
@@ -43,5 +43,5 @@ export const subsets: Problem = {
 	starterCode: starterCodeSubsets,
 	handlerFunction: subsetsHandler,
 	starterFunctionName: "function subsets",
-	order: 0,
+	order: 10,
 };

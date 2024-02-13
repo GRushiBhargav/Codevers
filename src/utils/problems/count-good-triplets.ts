@@ -26,7 +26,7 @@ const handlerCountGoodTriplets = (fn: any) => {
 
 export const countGoodTriplets: Problem = {
     id: "count-good-triplets",
-    title: "Count Good Triplets",
+    title: "11. Count Good Triplets",
     problemStatement: `<p>Given an array of integers <code>arr</code>, and three integers <code>a</code>, <code>b</code> and <code>c</code>. You need to find the number of good triplets.</p>
     <p>A triplet (arr[i], arr[j], arr[k]) is good if the following conditions are true:</p>
     <ul>
@@ -56,6 +56,6 @@ export const countGoodTriplets: Problem = {
     </li>`,
     handlerFunction: handlerCountGoodTriplets,
     starterCode: starterCodeCountGoodTriplets,
-    order: 1,
+    order: 11,
     starterFunctionName: `function countGoodTriplets(`,
 };

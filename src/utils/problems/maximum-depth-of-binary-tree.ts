@@ -65,7 +65,7 @@ function maxDepth(root) {
 
 export const maxDepth: Problem = {
 	id: "maximum-depth-of-binary-tree",
-	title: "Maximum Depth of Binary Tree",
+	title: "8. Maximum Depth of Binary Tree",
 	problemStatement: `
     <p class="mt-3">Given the root of a binary tree, return its maximum depth.</p>
     <p class="mt-3">
@@ -98,5 +98,5 @@ export const maxDepth: Problem = {
 	starterCode: starterCodeMaxDepth,
 	handlerFunction: maxDepthHandler,
 	starterFunctionName: "function maxDepth",
-	order: 0,
+	order: 8,
 };
