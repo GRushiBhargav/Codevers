@@ -21,7 +21,7 @@ export const containerWithMostWaterHandler = (fn: any) => {
 };
 
 const starterCodeContainerWithMostWater = `// Do not edit function name
-function maxArea(height: number[]): number {
+function maxArea(height){
     // Write your code here
 }`;
 
@@ -29,12 +29,9 @@ export const containerWithMostWater: Problem = {
 	id: "container-with-most-water",
 	title: "Container With Most Water",
 	problemStatement: `
-    <p class="mt-3">Given <code>n</code> non-negative integers <code>height</code> where each represents the height of a vertical line of width <code>1</code>, find two lines which, together with the x-axis forms a container, such that the container contains the most water.</p>
+    <p class="mt-3">You are given an integer array<code>n</code> non-negative integers <code>height</code> where each represents the height of a vertical line of width <code>1</code>, find two lines which, together with the x-axis forms a container, such that the container contains the most water.</p>
     <p class="mt-3">You may not slant the container.</p>
     <p class="mt-3">Example:</p>
-    <p class="mt-3">
-      <img src="${exampleImage}" alt="Example Image">
-    </p>
     <p class="mt-3">
       In this case, the max area of water (blue section) the container can contain is 49.
     </p>
