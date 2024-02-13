@@ -86,7 +86,7 @@ export default function Home() {
 				</div>
 				{/*adding problems to database using form*/}
 				
-				 <form className='p-6 flex flex-col max-w-sm gap-3' onSubmit={handleSubmit}>
+				 {/* <form className='p-6 flex flex-col max-w-sm gap-3' onSubmit={handleSubmit}>
 					<input onChange={handleInputChange} type="text" placeholder='problem id' name='id' />
 					<input onChange={handleInputChange}type="text" placeholder='title' name='title' />
 					<input onChange={handleInputChange}type="text" placeholder='difficulty' name='difficulty' />
@@ -96,7 +96,7 @@ export default function Home() {
 					<input onChange={handleInputChange}type="text" placeholder='link?' name='link' />
 					
 					<button className='bg-white'>Save to db</button>
-				</form>
+				</form> */}
 
 
       </main>
